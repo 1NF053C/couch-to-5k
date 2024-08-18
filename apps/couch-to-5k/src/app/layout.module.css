@@ -1,0 +1,11 @@
+:root.rootsite {
+    /* forced me to add a local class */
+    --color-primary: #79ECEC;
+    --color-active: #CCEEDD;
+    overflow-y: scroll;
+}
+
+.maincontent {
+    color: white;
+    margin: 32px;
+}

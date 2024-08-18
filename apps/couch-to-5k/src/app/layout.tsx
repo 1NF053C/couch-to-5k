@@ -1,18 +1,22 @@
-import './global.css';
-
-export const metadata = {
-  title: 'Welcome to couch-to-5k',
-  description: 'an app to help you with your couch-to-5k goals',
-};
+'use client';
+import style from '@/app/layout.module.css';
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+import MainBackground from './components/MainBackground';
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html className={style.rootsite} lang="en">
+      <body className={style.maincontent + ' ' + inter.className}>
+        <main style={{ position: 'relative', zIndex: 1 }}>
+          {children}
+        </main>
+        <MainBackground />
+      </body>
     </html>
-  );
+  )
 }
