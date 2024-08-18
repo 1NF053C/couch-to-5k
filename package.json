@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve:extract": "nodemon --config nodemon-extract.json",
-    "serve:load": "nodemon --config nodemon-load.json",
+    "extract:serve": "nodemon --config nodemon-extract.json",
+    "load:serve": "nodemon --config nodemon-load.json",
+    "couch-to-5k:dev": "npx nx run couch-to-5k:dev",
     "dev:http": "npx nx dev http",
     "db:migrate:load": "npx nx run load:db:migrate",
     "db:studio:load": "npx prisma studio --schema=apps/load/prisma/schema.prisma"

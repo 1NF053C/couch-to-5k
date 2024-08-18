@@ -1,0 +1,8 @@
+{
+  "name": "couch-to-5k",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/couch-to-5k",
+  "projectType": "application",
+  "tags": [],
+  "targets": {}
+}
